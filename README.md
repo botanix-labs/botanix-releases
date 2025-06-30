@@ -6,7 +6,7 @@ This repository contains public release artifacts, documentation, and changelogs
 
 | Channel | Version | Release Date | Downloads |
 |---------|---------|--------------|-----------|
-| stable | 1.1.2 | | [Download](releases/1.1.2) |
+| stable | 1.1.2-hotfix | | [Download](releases/1.1.2-hotfix) |
 
 ## Quick Start
 
