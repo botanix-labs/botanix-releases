@@ -1,0 +1,17 @@
+{
+  "releases": [
+    {
+      "version": "1.1.2",
+      "channel": "stable",
+      "date": "2025-06-30T19:09:48Z",
+      "prerelease": false,
+      "path": "releases/1.1.2"
+    }
+  ],
+  "channels": {
+    "stable": "1.1.2"
+  },
+  "latest": {
+    "stable": "1.1.2"
+  }
+}
