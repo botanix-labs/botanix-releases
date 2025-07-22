@@ -1,17 +1,17 @@
 {
   "releases": [
     {
-      "version": "1.1.12",
-      "channel": "stable",
-      "date": "2025-07-21T20:38:59Z",
-      "prerelease": false,
-      "path": "releases/1.1.12"
+      "version": "1.1.13-hotfix.1",
+      "channel": "hotfix",
+      "date": "2025-07-22T18:38:22Z",
+      "prerelease": true,
+      "path": "releases/1.1.13-hotfix.1"
     }
   ],
   "channels": {
-    "stable": "1.1.12"
+    "hotfix": "1.1.13-hotfix.1"
   },
   "latest": {
-    "stable": "1.1.12"
+    "hotfix": "1.1.13-hotfix.1"
   }
 }
