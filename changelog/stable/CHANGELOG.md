@@ -5,6 +5,22 @@ All notable changes to the stable release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.13] - 2025-07-22
+
+
+### Continuous Integration
+
+* fix building docker images job in release workflow ([#866](https://github.com/botanix-labs/Macbeth/issues/866)) ([ea35f16](https://github.com/botanix-labs/Macbeth/commit/ea35f165c8aab93b7b0b5aedb9a6e29ff57ca69b))
+
+### Miscellaneous
+
+* **release:** back-merge v1.1.12 from main to hotfix ([1d2a0c4](https://github.com/botanix-labs/Macbeth/commit/1d2a0c4eb77e2e66efa8b2a041594dc9a0aea538))
+* **release:** bump version to 1.1.13-hotfix.1 ([ac356c3](https://github.com/botanix-labs/Macbeth/commit/ac356c33f0476a12e8b7d37cf13c44e017de0be2))
+
+
+**Downloads:** [Release Page](../../releases/1.1.13/)
+
+
 ## [1.1.12] - 2025-07-21
 
 
