@@ -1,11 +1,11 @@
-# Botanix rc Channel Changelog
+# Botanix v1.2.0-rc.1
 
-All notable changes to the rc release channel will be documented in this file.
+**Release Channel:** `rc`
+**Release Date:** 2025-07-25 18:15:39 UTC
+**Git Tag:** `v1.2.0-rc.1`
+**Git SHA:** `388333f37d99632beca216816edfe2d4dc1a2a96`
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [1.2.0-rc.1] - 2025-07-25
+## Release Notes
 
 
 ### Features
@@ -88,13 +88,71 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * reth cli reads envs ([#737](https://github.com/botanix-labs/Macbeth/issues/737)) ([903220d](https://github.com/botanix-labs/Macbeth/commit/903220dd90b668ef8adbf6db2d8c9c8df034a369)), closes [#734](https://github.com/botanix-labs/Macbeth/issues/734)
 
 
-**Downloads:** [Release Page](../../releases/1.2.0-rc.1/)
+## Downloads
 
+### Binaries
 
-## [1.1.4-rc] - 2025-07-01
+#### Reth Node
+- [Linux x86_64](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-x86_64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum))
+- [Linux ARM64](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-aarch64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-aarch64-unknown-linux-gnu.tar.gz.sha256sum))
 
+#### BTC Server
+- [Linux x86_64](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/rc/1.2.0-rc.1/btc-server-x86_64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/rc/1.2.0-rc.1/btc-server-x86_64-unknown-linux-gnu.tar.gz.sha256sum))
+- [Linux ARM64](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/rc/1.2.0-rc.1/btc-server-aarch64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/rc/1.2.0-rc.1/btc-server-aarch64-unknown-linux-gnu.tar.gz.sha256sum))
 
+### Docker Images
 
-**Downloads:** [Release Page](../../releases/1.1.4-rc/)
+#### BTC Server
+```bash
+docker pull ghcr.io/botanix-labs/botanix-btc-server:1.2.0-rc.1
+docker pull ghcr.io/botanix-labs/botanix-btc-server:rc
+```
 
+#### Reth Node
+```bash
+docker pull ghcr.io/botanix-labs/botanix-reth-node:1.2.0-rc.1
+docker pull ghcr.io/botanix-labs/botanix-reth-node:rc
+```
 
+## Verification
+
+### Binary Checksums
+```bash
+# Download and verify checksums
+wget https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-x86_64-unknown-linux-gnu.tar.gz
+wget https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum
+sha256sum -c reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum
+```
+
+### Docker Image Verification
+```bash
+# Inspect image labels
+docker inspect ghcr.io/botanix-labs/botanix-btc-server:1.2.0-rc.1 --format='{{.Config.Labels}}'
+```
+
+## Installation
+
+### Quick Start with Docker
+```bash
+# Run BTC Server
+docker run -d --name botanix-btc-server \
+  -p 8080:8080 \
+  ghcr.io/botanix-labs/botanix-btc-server:1.2.0-rc.1
+
+# Run Reth Node
+docker run -d --name botanix-reth-node \
+  -p 30303:30303 -p 8545:8545 \
+  ghcr.io/botanix-labs/botanix-reth-node:1.2.0-rc.1
+```
+
+### Binary Installation
+```bash
+# Download and extract
+wget https://storage.googleapis.com/botanix-artifact-registry/releases/reth/rc/1.2.0-rc.1/reth-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf reth-x86_64-unknown-linux-gnu.tar.gz
+sudo mv reth /usr/local/bin/
+```
+
+## Previous Releases
+
+See [all releases](../../README.md#releases) for version history.
