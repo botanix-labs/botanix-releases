@@ -1,0 +1,42 @@
+{
+  "version": "1.1.14-hotfix.2",
+  "channel": "hotfix",
+  "release_date": "2025-07-31T14:38:36Z",
+  "git_tag": "v1.1.14-hotfix.2",
+  "git_sha": "c399b5b8fbbf20b8845b82fdfe6ff94bae2e2aa3",
+  "previous_version": "1.1.14-hotfix.1",
+  "breaking_changes": false,
+  "prerelease": true,
+  "binaries": {
+    "reth": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.1.14-hotfix.2/reth-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.1.14-hotfix.2/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.1.14-hotfix.2/reth-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.1.14-hotfix.2/reth-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    },
+    "btc-server": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.1.14-hotfix.2/btc-server-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.1.14-hotfix.2/btc-server-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.1.14-hotfix.2/btc-server-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.1.14-hotfix.2/btc-server-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    }
+  },
+  "docker_images": {
+    "btc_server": {
+      "registry": "ghcr.io/botanix-labs/botanix-btc-server",
+      "tags": ["1.1.14-hotfix.2", "hotfix"]
+    },
+    "reth_node": {
+      "registry": "ghcr.io/botanix-labs/botanix-reth-node",
+      "tags": ["1.1.14-hotfix.2", "hotfix"]
+    }
+  }
+}
