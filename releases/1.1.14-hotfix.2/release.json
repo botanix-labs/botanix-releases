@@ -1,9 +1,9 @@
 {
   "version": "1.1.14-hotfix.2",
   "channel": "hotfix",
-  "release_date": "2025-07-31T14:38:36Z",
+  "release_date": "2025-08-01T21:18:07Z",
   "git_tag": "v1.1.14-hotfix.2",
-  "git_sha": "c399b5b8fbbf20b8845b82fdfe6ff94bae2e2aa3",
+  "git_sha": "1ac5ecee6000a6cdee4506b66edfc44adff40158",
   "previous_version": "1.1.14-hotfix.1",
   "breaking_changes": false,
   "prerelease": true,

@@ -1,9 +1,9 @@
 # Botanix v1.1.14-hotfix.2
 
 **Release Channel:** `hotfix`
-**Release Date:** 2025-07-31 14:38:36 UTC
+**Release Date:** 2025-08-01 21:18:07 UTC
 **Git Tag:** `v1.1.14-hotfix.2`
-**Git SHA:** `c399b5b8fbbf20b8845b82fdfe6ff94bae2e2aa3`
+**Git SHA:** `1ac5ecee6000a6cdee4506b66edfc44adff40158`
 
 ## Release Notes
 
@@ -12,6 +12,10 @@
 
 * **priority fee:** remove enforced minimum ([80e7dd9](https://github.com/botanix-labs/Macbeth/commit/80e7dd9fb4427cf409c42e19a607e68d46625d6c))
 * **priority fee:** remove enforced minimum ([#883](https://github.com/botanix-labs/Macbeth/issues/883)) ([c399b5b](https://github.com/botanix-labs/Macbeth/commit/c399b5b8fbbf20b8845b82fdfe6ff94bae2e2aa3))
+
+### Miscellaneous
+
+* **release:** bump version to 1.1.14-hotfix.2 ([f906a06](https://github.com/botanix-labs/Macbeth/commit/f906a0612ae01c54aafe34a4248a0c9d8933f14c))
 
 
 ## Downloads
