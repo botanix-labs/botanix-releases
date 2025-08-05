@@ -1,0 +1,42 @@
+{
+  "version": "1.2.0-hotfix.3",
+  "channel": "hotfix",
+  "release_date": "2025-08-05T18:40:03Z",
+  "git_tag": "v1.2.0-hotfix.3",
+  "git_sha": "2ad22b078fe98427b9ead87b57b683b27ae872ce",
+  "previous_version": "1.2.0-hotfix.2",
+  "breaking_changes": false,
+  "prerelease": true,
+  "binaries": {
+    "reth": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.2.0-hotfix.3/reth-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.2.0-hotfix.3/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.2.0-hotfix.3/reth-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.2.0-hotfix.3/reth-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    },
+    "btc-server": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.2.0-hotfix.3/btc-server-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.2.0-hotfix.3/btc-server-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.2.0-hotfix.3/btc-server-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.2.0-hotfix.3/btc-server-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    }
+  },
+  "docker_images": {
+    "btc_server": {
+      "registry": "ghcr.io/botanix-labs/botanix-btc-server",
+      "tags": ["1.2.0-hotfix.3", "hotfix"]
+    },
+    "reth_node": {
+      "registry": "ghcr.io/botanix-labs/botanix-reth-node",
+      "tags": ["1.2.0-hotfix.3", "hotfix"]
+    }
+  }
+}

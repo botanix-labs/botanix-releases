@@ -6,12 +6,19 @@
       "date": "2025-08-05T15:28:34Z",
       "prerelease": true,
       "path": "releases/1.2.0-hotfix.2"
+    },
+    {
+      "version": "1.2.0-hotfix.3",
+      "channel": "hotfix",
+      "date": "2025-08-05T18:40:03Z",
+      "prerelease": true,
+      "path": "releases/1.2.0-hotfix.3"
     }
   ],
   "channels": {
-    "hotfix": "1.2.0-hotfix.2"
+    "hotfix": "1.2.0-hotfix.3"
   },
   "latest": {
-    "hotfix": "1.2.0-hotfix.2"
+    "hotfix": "1.2.0-hotfix.3"
   }
 }
