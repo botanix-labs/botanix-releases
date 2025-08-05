@@ -6,22 +6,22 @@ This repository contains public release artifacts, documentation, and changelogs
 
 | Channel | Version | Release Date | Downloads |
 |---------|---------|--------------|-----------|
-| stable | 1.0.4 | | [Download](releases/1.0.4) |
+| stable | 1.0.5 | | [Download](releases/1.0.5) |
 
 ## Quick Start
 
 ### Docker (Recommended)
 ```bash
 # Use explicit version tags for reproducible builds
-docker pull ghcr.io/botanix-labs/botanix-reth-node:1.0.4
-docker pull ghcr.io/botanix-labs/botanix-btc-server:1.0.4
+docker pull ghcr.io/botanix-labs/botanix-reth-node:1.0.5
+docker pull ghcr.io/botanix-labs/botanix-btc-server:1.0.5
 ```
 
 ### Binary Installation
 ```bash
 # Download stable binaries with explicit version
-curl -L https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.0.4/reth-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-curl -L https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.0.4/btc-server-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+curl -L https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.0.5/reth-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+curl -L https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.0.5/btc-server-x86_64-unknown-linux-gnu.tar.gz | tar -xz
 ```
 
 ## Documentation
