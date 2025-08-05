@@ -1,11 +1,11 @@
-# Botanix stable Channel Changelog
+# Botanix v1.2.0
 
-All notable changes to the stable release channel will be documented in this file.
+**Release Channel:** `stable`
+**Release Date:** 2025-08-05 23:35:06 UTC
+**Git Tag:** `v1.2.0`
+**Git SHA:** `aec429e498a958291924e695ce811fb441873712`
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [1.2.0] - 2025-08-05
+## Release Notes
 
 
 ### Features
@@ -51,85 +51,71 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * **version:** rollback to correct version ([1183147](https://github.com/botanix-labs/Macbeth/commit/1183147a485d2da1be6c5ad1a767ec4a82723e46))
 
 
-**Downloads:** [Release Page](../../releases/1.2.0/)
+## Downloads
 
+### Binaries
 
-## [1.0.5] - 2025-08-05
+#### Reth Node
+- [Linux x86_64](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-x86_64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum))
+- [Linux ARM64](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-aarch64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-aarch64-unknown-linux-gnu.tar.gz.sha256sum))
 
+#### BTC Server
+- [Linux x86_64](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.2.0/btc-server-x86_64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.2.0/btc-server-x86_64-unknown-linux-gnu.tar.gz.sha256sum))
+- [Linux ARM64](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.2.0/btc-server-aarch64-unknown-linux-gnu.tar.gz) ([checksum](https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.2.0/btc-server-aarch64-unknown-linux-gnu.tar.gz.sha256sum))
 
-### Continuous Integration
+### Docker Images
 
-* publish public fixes ([71d2fc5](https://github.com/botanix-labs/macbeth-release/commit/71d2fc536d0093ab1dd2910e9c550187fe2686df))
+#### BTC Server
+```bash
+docker pull ghcr.io/botanix-labs/botanix-btc-server:1.2.0
+docker pull ghcr.io/botanix-labs/botanix-btc-server:stable
+```
 
-### Miscellaneous
+#### Reth Node
+```bash
+docker pull ghcr.io/botanix-labs/botanix-reth-node:1.2.0
+docker pull ghcr.io/botanix-labs/botanix-reth-node:stable
+```
 
-* **release:** back-merge v1.0.4 from main to hotfix ([eb09b03](https://github.com/botanix-labs/macbeth-release/commit/eb09b03e9ea67bcaf27ca5d7401f711e8b9e6daa))
-* **release:** bump version to 1.0.5-hotfix.1 ([ed905ba](https://github.com/botanix-labs/macbeth-release/commit/ed905ba88e78713de9fdae123a01ed779b405e49))
+## Verification
 
+### Binary Checksums
+```bash
+# Download and verify checksums
+wget https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-x86_64-unknown-linux-gnu.tar.gz
+wget https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum
+sha256sum -c reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum
+```
 
-**Downloads:** [Release Page](../../releases/1.0.5/)
+### Docker Image Verification
+```bash
+# Inspect image labels
+docker inspect ghcr.io/botanix-labs/botanix-btc-server:1.2.0 --format='{{.Config.Labels}}'
+```
 
+## Installation
 
-## [1.0.4] - 2025-08-05
+### Quick Start with Docker
+```bash
+# Run BTC Server
+docker run -d --name botanix-btc-server \
+  -p 8080:8080 \
+  ghcr.io/botanix-labs/botanix-btc-server:1.2.0
 
+# Run Reth Node
+docker run -d --name botanix-reth-node \
+  -p 30303:30303 -p 8545:8545 \
+  ghcr.io/botanix-labs/botanix-reth-node:1.2.0
+```
 
-### Continuous Integration
+### Binary Installation
+```bash
+# Download and extract
+wget https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.2.0/reth-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf reth-x86_64-unknown-linux-gnu.tar.gz
+sudo mv reth /usr/local/bin/
+```
 
-* test fix for public repo ([be79803](https://github.com/botanix-labs/macbeth-release/commit/be79803c748874dc26739e82e3b85126e25ac055))
+## Previous Releases
 
-### Miscellaneous
-
-* **release:** back-merge v1.0.3 from main to hotfix ([2adbcb8](https://github.com/botanix-labs/macbeth-release/commit/2adbcb834a03513f02c210aca9ad3c4242e732c1))
-* **release:** bump version to 1.0.4-hotfix.1 ([54dc98d](https://github.com/botanix-labs/macbeth-release/commit/54dc98d2406c630042beaa16bc0759e8113c6d99))
-
-
-**Downloads:** [Release Page](../../releases/1.0.4/)
-
-
-## [1.1.13] - 2025-07-22
-
-
-### Continuous Integration
-
-* fix building docker images job in release workflow ([#866](https://github.com/botanix-labs/Macbeth/issues/866)) ([ea35f16](https://github.com/botanix-labs/Macbeth/commit/ea35f165c8aab93b7b0b5aedb9a6e29ff57ca69b))
-
-### Miscellaneous
-
-* **release:** back-merge v1.1.12 from main to hotfix ([1d2a0c4](https://github.com/botanix-labs/Macbeth/commit/1d2a0c4eb77e2e66efa8b2a041594dc9a0aea538))
-* **release:** bump version to 1.1.13-hotfix.1 ([ac356c3](https://github.com/botanix-labs/Macbeth/commit/ac356c33f0476a12e8b7d37cf13c44e017de0be2))
-
-
-**Downloads:** [Release Page](../../releases/1.1.13/)
-
-
-## [1.1.12] - 2025-07-21
-
-
-### Continuous Integration
-
-* semantic release flow ([#749](https://github.com/botanix-labs/Macbeth/issues/749)) ([316400d](https://github.com/botanix-labs/Macbeth/commit/316400d2b8375234c598788f05b96ac620b8c135))
-
-### Miscellaneous
-
-* bump to v1.1.12 ([ddb0e92](https://github.com/botanix-labs/Macbeth/commit/ddb0e9228326d9d0e8842a5ed6ab5d6719bc3fba))
-* merge hotfix into main ([#862](https://github.com/botanix-labs/Macbeth/issues/862)) ([2e730b1](https://github.com/botanix-labs/Macbeth/commit/2e730b166a2d18bcf8b9441f7a4d1dbb03656709))
-* **release:** bump version to 1.1.11-hotfix.1 ([997becb](https://github.com/botanix-labs/Macbeth/commit/997becb3dc820d01d435ece4a426de15023af8b5))
-
-
-**Downloads:** [Release Page](../../releases/1.1.12/)
-
-
-## [1.1.2-hotfix] - 2025-06-30
-
-
-
-**Downloads:** [Release Page](../../releases/1.1.2-hotfix/)
-
-
-## [1.1.2] - 2025-06-30
-
-
-
-**Downloads:** [Release Page](../../releases/1.1.2/)
-
-
+See [all releases](../../README.md#releases) for version history.
