@@ -6,26 +6,17 @@ This repository contains public release artifacts, documentation, and changelogs
 
 | Channel | Version | Release Date | Downloads |
 |---------|---------|--------------|-----------|
-| hotfix | 1.2.0-hotfix.1 | | [Download](releases/1.2.0-hotfix.1) |
 
 ## Quick Start
 
 ### Docker (Recommended)
 ```bash
-# Latest stable release
-docker pull ghcr.io/botanix-labs/botanix-reth-node:latest
-docker pull ghcr.io/botanix-labs/botanix-btc-server:latest
-
-# Development builds
-docker pull ghcr.io/botanix-labs/botanix-reth-node:alpha
-docker pull ghcr.io/botanix-labs/botanix-btc-server:alpha
+# Use explicit version tags for reproducible builds
 ```
 
 ### Binary Installation
 ```bash
-# Download latest stable binaries
-curl -L https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/latest/reth-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-curl -L https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/latest/btc-server-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+# Download stable binaries with explicit version
 ```
 
 ## Documentation

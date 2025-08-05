@@ -5,6 +5,21 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4-hotfix.1] - 2025-08-05
+
+
+### Continuous Integration
+
+* test fix for public repo ([be79803](https://github.com/botanix-labs/macbeth-release/commit/be79803c748874dc26739e82e3b85126e25ac055))
+
+### Miscellaneous
+
+* **release:** back-merge v1.0.3 from main to hotfix ([2adbcb8](https://github.com/botanix-labs/macbeth-release/commit/2adbcb834a03513f02c210aca9ad3c4242e732c1))
+
+
+**Downloads:** [Release Page](../../releases/1.0.4-hotfix.1/)
+
+
 ## [1.2.0-hotfix.1] - 2025-08-05
 
 
