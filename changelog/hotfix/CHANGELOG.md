@@ -5,6 +5,22 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0-hotfix.1] - 2025-08-06
+
+
+### Features
+
+*  command to rollback blocks ([#908](https://github.com/botanix-labs/Macbeth/issues/908)) ([ad84301](https://github.com/botanix-labs/Macbeth/commit/ad84301e6373e2048c1a97c0083b9c3cf7b4eb96))
+*  command to rollback blocks ([#909](https://github.com/botanix-labs/Macbeth/issues/909)) ([45d3044](https://github.com/botanix-labs/Macbeth/commit/45d30446e77ce8e32d99ec6751c4d3ef88f12425))
+
+### Miscellaneous
+
+* **release:** back-merge v1.2.0 from main to hotfix ([e1cf64f](https://github.com/botanix-labs/Macbeth/commit/e1cf64f988188ed9e4fffa782569df4a74e189d4))
+
+
+**Downloads:** [Release Page](../../releases/1.3.0-hotfix.1/)
+
+
 ## [1.2.0-hotfix.3] - 2025-08-05
 
 
