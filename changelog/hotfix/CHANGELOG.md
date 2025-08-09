@@ -5,6 +5,18 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0-hotfix.4] - 2025-08-09
+
+
+### Bug Fixes
+
+* **abci:** set version 0 to recover testnet ([3f51e91](https://github.com/botanix-labs/Macbeth/commit/3f51e91877fe489f87a5ceb283c931f7187a6ecd))
+* **abci:** set version 0 to recover testnet ([#914](https://github.com/botanix-labs/Macbeth/issues/914)) ([1b9f87c](https://github.com/botanix-labs/Macbeth/commit/1b9f87c0f36c1848656236390523fed431271c61))
+
+
+**Downloads:** [Release Page](../../releases/1.3.0-hotfix.4/)
+
+
 ## [1.3.0-hotfix.3] - 2025-08-08
 
 
