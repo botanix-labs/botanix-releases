@@ -5,6 +5,17 @@ All notable changes to the rc release channel will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0-rc.3] - 2025-08-18
+
+
+### Miscellaneous
+
+* **version:** update to correct version ([de7ae70](https://github.com/botanix-labs/Macbeth/commit/de7ae70d338ff49cedc5a9612b76e1a8e72312d6))
+
+
+**Downloads:** [Release Page](../../releases/1.2.0-rc.3/)
+
+
 ## [1.2.0-rc.2] - 2025-08-18
 
 
