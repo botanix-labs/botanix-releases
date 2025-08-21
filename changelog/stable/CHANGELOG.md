@@ -5,6 +5,24 @@ All notable changes to the stable release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2025-08-21
+
+
+### Bug Fixes
+
+* **btc-server:** check is_coordinator before resetting pending pegouts ([#932](https://github.com/botanix-labs/Macbeth/issues/932)) ([6cacf76](https://github.com/botanix-labs/Macbeth/commit/6cacf7616408b8c93cbee423465b7bf92e8cef37))
+* **btc-server:** pending pegout race condition ([#934](https://github.com/botanix-labs/Macbeth/issues/934)) ([34bb0a4](https://github.com/botanix-labs/Macbeth/commit/34bb0a4e41363905644edb40455795249b431206))
+* pending pegouts race condition ([#938](https://github.com/botanix-labs/Macbeth/issues/938)) ([41dd0fd](https://github.com/botanix-labs/Macbeth/commit/41dd0fd56a7b7d36e5489e02ea64f89afd9725d2))
+
+### Miscellaneous
+
+* **release:** back-merge v1.3.0 from main to hotfix ([e874240](https://github.com/botanix-labs/Macbeth/commit/e874240667e96681f0c593b5a268e90c9faf1e7f))
+* **release:** bump version to 1.3.1-hotfix.1 ([2689a0d](https://github.com/botanix-labs/Macbeth/commit/2689a0d0ed3b89703f18000352b60ccc6a2c95c1))
+
+
+**Downloads:** [Release Page](../../releases/1.3.1/)
+
+
 ## [1.3.0] - 2025-08-11
 
 

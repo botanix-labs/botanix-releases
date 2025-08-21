@@ -1,0 +1,42 @@
+{
+  "version": "1.3.1",
+  "channel": "stable",
+  "release_date": "2025-08-21T15:04:34Z",
+  "git_tag": "v1.3.1",
+  "git_sha": "41dd0fd56a7b7d36e5489e02ea64f89afd9725d2",
+  "previous_version": "1.3.0",
+  "breaking_changes": false,
+  "prerelease": false,
+  "binaries": {
+    "reth": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.3.1/reth-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.3.1/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.3.1/reth-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/stable/1.3.1/reth-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    },
+    "btc-server": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.3.1/btc-server-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.3.1/btc-server-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.3.1/btc-server-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/stable/1.3.1/btc-server-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    }
+  },
+  "docker_images": {
+    "btc_server": {
+      "registry": "ghcr.io/botanix-labs/botanix-btc-server",
+      "tags": ["1.3.1", "stable"]
+    },
+    "reth_node": {
+      "registry": "ghcr.io/botanix-labs/botanix-reth-node",
+      "tags": ["1.3.1", "stable"]
+    }
+  }
+}
