@@ -5,6 +5,25 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.2-hotfix.1] - 2025-08-22
+
+
+### Bug Fixes
+
+* **pegouts:** don't store pegout if in finalized pegouts list ([089c8fd](https://github.com/botanix-labs/Macbeth/commit/089c8fd4b10cb9c034e0e44b7336e24db28f4e6e))
+* **pegouts:** don't store pegout if it has been broadcasted ([419c57a](https://github.com/botanix-labs/Macbeth/commit/419c57aa1bbcf12d4a4985d57b2dc417f92121e9))
+* **pegouts:** remove finalized pegout from pending pegout list ([15c3cdf](https://github.com/botanix-labs/Macbeth/commit/15c3cdfb6e447c32a980b156263b22f37a9ed4de))
+* remove finalized pegout from pending pegout list ([#944](https://github.com/botanix-labs/Macbeth/issues/944)) ([e55c0f6](https://github.com/botanix-labs/Macbeth/commit/e55c0f6e86e8bb1a9670f461c6662639a6ea5440))
+
+### Miscellaneous
+
+* **logs:** set wallet state logs to trace for btc-server ([cd375e9](https://github.com/botanix-labs/Macbeth/commit/cd375e9be9433b2526fa5b06100e91c9bacd1d16))
+* **release:** back-merge v1.3.1 from main to hotfix ([f2da833](https://github.com/botanix-labs/Macbeth/commit/f2da83302796c23d6a2da491c78b77d94eb3a679))
+
+
+**Downloads:** [Release Page](../../releases/1.3.2-hotfix.1/)
+
+
 ## [1.3.1-hotfix.1] - 2025-08-20
 
 
