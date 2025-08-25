@@ -5,6 +5,18 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.2-hotfix.3] - 2025-08-25
+
+
+### Bug Fixes
+
+* **log:** set frost command log to debug ([d356455](https://github.com/botanix-labs/Macbeth/commit/d356455f81f2d5cbc190e04176ac245e18bf59c0))
+* **log:** set frost command log to debug ([#954](https://github.com/botanix-labs/Macbeth/issues/954)) ([cc17edd](https://github.com/botanix-labs/Macbeth/commit/cc17edd5f888907013f665a2000efb9cdfce5097))
+
+
+**Downloads:** [Release Page](../../releases/1.3.2-hotfix.3/)
+
+
 ## [1.3.2-hotfix.2] - 2025-08-25
 
 
