@@ -5,6 +5,19 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.2-hotfix.2] - 2025-08-25
+
+
+### Bug Fixes
+
+* **config:** increase mainnet epoch length to 100 ([f173e7a](https://github.com/botanix-labs/Macbeth/commit/f173e7a430f8ee9a410bd1f59a77b2bafd93c551))
+* **wallet-sync:** change log levels ([33f6446](https://github.com/botanix-labs/Macbeth/commit/33f6446c009fdc28653281bc6d7a551a0f04f1c2))
+* **wallet-sync:** increase epoch length ([#953](https://github.com/botanix-labs/Macbeth/issues/953)) ([99ae576](https://github.com/botanix-labs/Macbeth/commit/99ae5768edfc4cad6950cbf946bbbeb39b902937))
+
+
+**Downloads:** [Release Page](../../releases/1.3.2-hotfix.2/)
+
+
 ## [1.3.2-hotfix.1] - 2025-08-22
 
 
