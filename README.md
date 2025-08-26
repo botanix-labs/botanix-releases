@@ -2,7 +2,7 @@
 
 This repository contains public release artifacts, documentation, and changelogs for Botanix.
 
-## Latest Releases| Channel | Version | Release Date | Downloads |
+| Channel | Version | Release Date | Downloads |
 |---------|---------|--------------|-----------|
 | stable | 1.3.2 | | [Download](releases/1.3.2) |
 
