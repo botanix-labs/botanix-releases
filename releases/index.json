@@ -1,66 +1,17 @@
 {
   "releases": [
-     {
-      "version": "1.2.0-rc.4",
+    {
+      "version": "1.2.0-rc.5",
       "channel": "rc",
-      "date": "2025-08-26T01:02:48Z",
+      "date": "2025-09-02T16:49:24Z",
       "prerelease": true,
-      "path": "releases/1.2.0-rc.4"
-     },
-    {
-      "version": "1.2.0-rc.3",
-      "channel": "rc",
-      "date": "2025-08-18T17:43:46Z",
-      "prerelease": true,
-      "path": "releases/1.2.0-rc.3"
-    },
-    {
-      "version": "1.3.1",
-      "channel": "stable",
-      "date": "2025-08-21T15:04:34Z",
-      "prerelease": false,
-      "path": "releases/1.3.1"
-    },
-    {
-      "version": "1.3.1-hotfix.1",
-      "channel": "hotfix",
-      "date": "2025-08-20T18:41:34Z",
-      "prerelease": true,
-      "path": "releases/1.3.1-hotfix.1"
-    },
-    {
-      "version": "1.3.2",
-      "channel": "stable",
-      "date": "2025-08-25T23:46:05Z",
-      "prerelease": false,
-      "path": "releases/1.3.2"
-    },
-    {
-      "version": "1.3.2-hotfix.1",
-      "channel": "hotfix",
-      "date": "2025-08-22T17:11:09Z",
-      "prerelease": true,
-      "path": "releases/1.3.2-hotfix.1"
-    },
-    {
-      "version": "1.3.2-hotfix.2",
-      "channel": "hotfix",
-      "date": "2025-08-25T16:51:52Z",
-      "prerelease": true,
-      "path": "releases/1.3.2-hotfix.2"
-    },
-    {
-      "version": "1.3.2-hotfix.3",
-      "channel": "hotfix",
-      "date": "2025-08-25T21:42:14Z",
-      "prerelease": true,
-      "path": "releases/1.3.2-hotfix.3"
+      "path": "releases/1.2.0-rc.5"
     }
   ],
   "channels": {
-    "rc": "1.2.0-rc.4"
+    "rc": "1.2.0-rc.5"
   },
   "latest": {
-    "rc": "1.2.0-rc.4"
+    "rc": "1.2.0-rc.5"
   }
 }
