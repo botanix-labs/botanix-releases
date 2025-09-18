@@ -1,17 +1,17 @@
 {
   "releases": [
     {
-      "version": "1.2.0-rc.5",
+      "version": "1.2.0-rc.6",
       "channel": "rc",
-      "date": "2025-09-02T16:49:24Z",
+      "date": "2025-09-18T09:47:21Z",
       "prerelease": true,
-      "path": "releases/1.2.0-rc.5"
+      "path": "releases/1.2.0-rc.6"
     }
   ],
   "channels": {
-    "rc": "1.2.0-rc.5"
+    "rc": "1.2.0-rc.6"
   },
   "latest": {
-    "rc": "1.2.0-rc.5"
+    "rc": "1.2.0-rc.6"
   }
 }

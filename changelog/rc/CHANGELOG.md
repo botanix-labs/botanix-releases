@@ -5,6 +5,39 @@ All notable changes to the rc release channel will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0-rc.6] - 2025-09-18
+
+
+### Features
+
+* Added get validator signatures cli command ([e537bd2](https://github.com/botanix-labs/Macbeth/commit/e537bd29da13d092362f88f44a2d37a1934ee387))
+* Added get validator signatures cli command ([#980](https://github.com/botanix-labs/Macbeth/issues/980)) ([3049958](https://github.com/botanix-labs/Macbeth/commit/304995869dc0f1ca02620145dd4ed25aba487e4d))
+
+### Bug Fixes
+
+* **btc-server:** add backwards compatibility for RpcUtxo script format change ([049e925](https://github.com/botanix-labs/Macbeth/commit/049e925e65a9eef86d6531a6076aa1c8951c3722))
+* fixed metrics prefix using a global registry one ([bade8dd](https://github.com/botanix-labs/Macbeth/commit/bade8dd1bf8f43fce6aeb2ae5d6dbd65c304d9f6))
+* fixed metrics prefix using a global registry one ([#979](https://github.com/botanix-labs/Macbeth/issues/979)) ([32c8169](https://github.com/botanix-labs/Macbeth/commit/32c8169efce781e769fcb90f8b96949696e5d42d))
+* **rpc:** Remove additional encoding for rpc utxo scripts ([8949bcb](https://github.com/botanix-labs/Macbeth/commit/8949bcb6d107b793960d4b0c2617e92a7369c3f1))
+* **rpc:** Remove additional encoding for rpc utxo scripts ([#949](https://github.com/botanix-labs/Macbeth/issues/949)) ([ddeb402](https://github.com/botanix-labs/Macbeth/commit/ddeb40200079ffe718e6f51391f41448daa945af))
+
+### Code Refactoring
+
+* cargo fmt ([b0e374b](https://github.com/botanix-labs/Macbeth/commit/b0e374b4181083555c18deba26a26086416b160c))
+
+### Tests
+
+* **btc-server:** add unit test for db rpc utxo conversion ([09f57f6](https://github.com/botanix-labs/Macbeth/commit/09f57f6b5799da6526c5b0624f1a1d3be0c19e61))
+* **btc-server:** remove exact fee amount from psbt validation unit test ([229b43b](https://github.com/botanix-labs/Macbeth/commit/229b43bc37d32a198bb14fa49e742ec40910f821))
+
+### Miscellaneous
+
+* rc for testing util & metrics features ([#982](https://github.com/botanix-labs/Macbeth/issues/982)) ([46c377b](https://github.com/botanix-labs/Macbeth/commit/46c377b79695c1415fb4cac14121fa18e5541a9f))
+
+
+**Downloads:** [Release Page](../../releases/1.2.0-rc.6/)
+
+
 ## [1.2.0-rc.5] - 2025-09-02
 
 
