@@ -5,6 +5,18 @@ All notable changes to the rc release channel will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0-rc.7] - 2025-09-18
+
+
+### Features
+
+* **btc-server:** key management pkg ([#984](https://github.com/botanix-labs/Macbeth/issues/984)) ([277fa0e](https://github.com/botanix-labs/Macbeth/commit/277fa0ed2c9a56fe4b4186021840e7ed95f62b21))
+* **btc-utils:** Init binary & implement export/import mechanism for Frost keys (back-merge into ) ([#983](https://github.com/botanix-labs/Macbeth/issues/983)) ([abd1ab8](https://github.com/botanix-labs/Macbeth/commit/abd1ab8ad507bd4cf6206017413fdbe729138827))
+
+
+**Downloads:** [Release Page](../../releases/1.2.0-rc.7/)
+
+
 ## [1.2.0-rc.6] - 2025-09-18
 
 
