@@ -5,6 +5,19 @@ All notable changes to the rc release channel will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0-rc.8] - 2025-09-25
+
+
+### Features
+
+* **btc-server:** split pegin pegout metrics ([#989](https://github.com/botanix-labs/Macbeth/issues/989)) ([df21652](https://github.com/botanix-labs/Macbeth/commit/df216527424ae099ea7185273bcd33619f5118c8))
+* **btc-serve:** unified pegin/pegout utxo metrics to a single guage ([41f1536](https://github.com/botanix-labs/Macbeth/commit/41f1536f5f144a0abe76acbf6b27138278659c0e))
+* **btc-serve:** unified pegin/pegout utxo metrics to a single guage ([#987](https://github.com/botanix-labs/Macbeth/issues/987)) ([2ceae6f](https://github.com/botanix-labs/Macbeth/commit/2ceae6f4607e55c4a178cd1760a8c56905573a6c))
+
+
+**Downloads:** [Release Page](../../releases/1.2.0-rc.8/)
+
+
 ## [1.2.0-rc.7] - 2025-09-18
 
 
