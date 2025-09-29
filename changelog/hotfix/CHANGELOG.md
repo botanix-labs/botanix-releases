@@ -5,6 +5,29 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.3-hotfix.1] - 2025-09-29
+
+
+### Bug Fixes
+
+* **test:** fix client import ([f754831](https://github.com/botanix-labs/Macbeth/commit/f7548313928b8771ce33eeb136551d172fb16321))
+
+### Code Refactoring
+
+* **test:** rename conflicting input to prevent resigning pegout ([83b0fcd](https://github.com/botanix-labs/Macbeth/commit/83b0fcd2271b0a49eb5e0c4091462ed039f4dba6))
+
+### Tests
+
+* **btc-server:** update conflictring input test to account for new behavior ([9c3ed77](https://github.com/botanix-labs/Macbeth/commit/9c3ed77d31d01d6cf9b38a9a99c167ac574f7bf5))
+
+### Miscellaneous
+
+* **release:** back-merge v1.3.2 from main to hotfix ([01d63ee](https://github.com/botanix-labs/Macbeth/commit/01d63ee91c6a186d6e873068daebb6e1e0f70e61))
+
+
+**Downloads:** [Release Page](../../releases/1.3.3-hotfix.1/)
+
+
 ## [1.3.2-hotfix.3] - 2025-08-25
 
 
