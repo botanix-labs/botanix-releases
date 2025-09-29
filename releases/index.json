@@ -6,12 +6,21 @@
       "date": "2025-09-29T19:12:48Z",
       "prerelease": true,
       "path": "releases/1.2.0-rc.9"
+    },
+    {
+      "version": "1.4.0-hotfix.1",
+      "channel": "hotfix",
+      "date": "2025-09-29T22:28:32Z",
+      "prerelease": true,
+      "path": "releases/1.4.0-hotfix.1"
     }
   ],
   "channels": {
-    "rc": "1.2.0-rc.9"
+    "rc": "1.2.0-rc.9",
+    "hotfix": "1.4.0-hotfix.1"
   },
   "latest": {
-    "rc": "1.2.0-rc.9"
+    "rc": "1.2.0-rc.9",
+    "hotfix": "1.4.0-hotfix.1"
   }
 }

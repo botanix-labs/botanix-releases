@@ -5,6 +5,28 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0-hotfix.1] - 2025-09-29
+
+
+### Features
+
+* **btc-server:** add flag excluded_eth_addresses for coin selection ([7631ed9](https://github.com/botanix-labs/Macbeth/commit/7631ed98b3cddd45dc40b7f9799c3edf921e4859))
+
+### Code Refactoring
+
+* **btc-server:** remove unused error type ([8598590](https://github.com/botanix-labs/Macbeth/commit/8598590ee0ef8e4dcf00c1f845a81d5630e3af92))
+
+### Miscellaneous
+
+* **ci:** bump rust version on clippy checks ([3193291](https://github.com/botanix-labs/Macbeth/commit/3193291717f1e58f9532d46fc14fb0eb8e1605b8))
+* **ci:** fix clippy cmdline ([5bdc045](https://github.com/botanix-labs/Macbeth/commit/5bdc04518473e52e7248c67fcc53ec21e0337fa2))
+* **ci:** relax result-large-err clippy warning ([3a641ae](https://github.com/botanix-labs/Macbeth/commit/3a641aed5bdd4a6e51c67f4895a4d0c3c9127b46))
+* **ci:** use clippy action ([993dfaa](https://github.com/botanix-labs/Macbeth/commit/993dfaabd9593173e1d61ce6514d4aae8dbbc38f))
+
+
+**Downloads:** [Release Page](../../releases/1.4.0-hotfix.1/)
+
+
 ## [1.3.3-hotfix.1] - 2025-09-29
 
 
