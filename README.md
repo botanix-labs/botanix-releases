@@ -16,7 +16,7 @@ This repository contains public release artifacts, documentation, and changelogs
 
 ### Binary Installation
 ```bash
-# Download stable binaries with explicit version
+# Download stable binaries
 ```
 
 ## Documentation
