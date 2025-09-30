@@ -5,6 +5,17 @@ All notable changes to the stable release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2025-09-30
+
+
+### Features
+
+* **btc-utils:** Init binary & implement export/import mechanism for Frost keys ([#973](https://github.com/botanix-labs/Macbeth/issues/973)) ([2b87751](https://github.com/botanix-labs/Macbeth/commit/2b87751f513fdb31e9cbf1bea2e885b86ce04db0))
+
+
+**Downloads:** [Release Page](../../releases/1.4.0/)
+
+
 ## [1.3.2] - 2025-08-25
 
 
