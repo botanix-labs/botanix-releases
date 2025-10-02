@@ -27,16 +27,23 @@
       "date": "2025-10-01T15:34:14Z",
       "prerelease": true,
       "path": "releases/1.4.0-hotfix.2"
+    },
+    {
+      "version": "1.5.0",
+      "channel": "stable",
+      "date": "2025-10-02T17:51:35Z",
+      "prerelease": false,
+      "path": "releases/1.5.0"
     }
   ],
   "channels": {
     "rc": "1.2.0-rc.9",
     "hotfix": "1.4.0-hotfix.2",
-    "stable": "1.4.0"
+    "stable": "1.5.0"
   },
   "latest": {
     "rc": "1.2.0-rc.9",
     "hotfix": "1.4.0-hotfix.2",
-    "stable": "1.4.0"
+    "stable": "1.5.0"
   }
 }
