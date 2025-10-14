@@ -5,6 +5,28 @@ All notable changes to the rc release channel will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0-rc.10] - 2025-10-14
+
+
+### Features
+
+* **btc-utils:** Implement  functionality ([#986](https://github.com/botanix-labs/Macbeth/issues/986)) ([15b5971](https://github.com/botanix-labs/Macbeth/commit/15b59712e01a37a8bb4ea56084d744e7363d2ee2))
+* **reth:** support dns hostnames in config ([#1007](https://github.com/botanix-labs/Macbeth/issues/1007)) ([4cee490](https://github.com/botanix-labs/Macbeth/commit/4cee49046cce034399ad712c6cc3ae1d624c5b5e))
+
+### Miscellaneous
+
+* **deps:** bump actions/setup-node from 4 to 5 ([#977](https://github.com/botanix-labs/Macbeth/issues/977)) ([b342af0](https://github.com/botanix-labs/Macbeth/commit/b342af026324e4dfcfd4e179b12375c463cbc624))
+* **deps:** bump clechasseur/rs-clippy-check from 4.0.5 to 5.0.1 ([9f32ea9](https://github.com/botanix-labs/Macbeth/commit/9f32ea9329238d1a8aebbbf71de81f641b5b23e8))
+* **deps:** bump clechasseur/rs-fmt-check from 2.0.11 to 3.0.0 ([bfaa89c](https://github.com/botanix-labs/Macbeth/commit/bfaa89cd7f1a15341604741c5c48c7684f036799))
+* **deps:** bump cycjimmy/semantic-release-action from 4 to 5 ([508e56f](https://github.com/botanix-labs/Macbeth/commit/508e56f9076ae5912d9366c38f382f919f4784cf))
+* **deps:** bump google-github-actions/auth from 2 to 3 ([#1006](https://github.com/botanix-labs/Macbeth/issues/1006)) ([ff7435c](https://github.com/botanix-labs/Macbeth/commit/ff7435ca047ae6e4ab04c839d7eaddfb233660ba))
+* **deps:** bump google-github-actions/setup-gcloud from 2 to 3 ([adfdfe0](https://github.com/botanix-labs/Macbeth/commit/adfdfe03e64f55f3e8679ec62bf9e0beacc4a9df))
+* **deps:** bump sigstore/cosign-installer from 3.9.2 to 3.10.0 ([#1005](https://github.com/botanix-labs/Macbeth/issues/1005)) ([9b94808](https://github.com/botanix-labs/Macbeth/commit/9b948089343c3ba54abdd1f0c155ef66f6a72d25))
+
+
+**Downloads:** [Release Page](../../releases/1.2.0-rc.10/)
+
+
 ## [1.2.0-rc.9] - 2025-09-29
 
 
