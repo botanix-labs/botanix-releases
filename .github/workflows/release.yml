@@ -1,0 +1,209 @@
+name: Auto-Create Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'releases/**/release.json'
+
+permissions:
+  contents: write
+
+jobs:
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect new release
+        id: detect
+        run: |
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
+
+          NEW_RELEASES=$(echo "$CHANGED_FILES" | grep -E '^releases/[^/]+/release\.json$' | sed 's|releases/\([^/]*\)/release.json|\1|' || true)
+
+          if [ -z "$NEW_RELEASES" ]; then
+            echo "No new releases detected"
+            echo "has_release=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          VERSION=$(echo "$NEW_RELEASES" | head -1)
+          echo "Detected new release: $VERSION"
+          echo "has_release=true" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Parse release metadata
+        id: metadata
+        if: steps.detect.outputs.has_release == 'true'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          RELEASE_JSON="releases/$VERSION/release.json"
+
+          if [ ! -f "$RELEASE_JSON" ]; then
+            echo "Error: $RELEASE_JSON not found"
+            exit 1
+          fi
+
+          CHANNEL=$(jq -r '.channel' "$RELEASE_JSON")
+          PRERELEASE=$(jq -r '.prerelease' "$RELEASE_JSON")
+          GIT_TAG=$(jq -r '.git_tag' "$RELEASE_JSON")
+
+          echo "channel=$CHANNEL" >> $GITHUB_OUTPUT
+          echo "prerelease=$PRERELEASE" >> $GITHUB_OUTPUT
+          echo "git_tag=$GIT_TAG" >> $GITHUB_OUTPUT
+
+          if [ "$PRERELEASE" = "true" ]; then
+            TITLE="Botanix v$VERSION ($CHANNEL)"
+          else
+            TITLE="Botanix v$VERSION"
+          fi
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+
+          if [ -f "releases/$VERSION/README.md" ]; then
+            echo "has_readme=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_readme=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate release notes
+        id: notes
+        if: steps.detect.outputs.has_release == 'true'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          README_PATH="releases/$VERSION/README.md"
+
+          if [ -f "$README_PATH" ]; then
+            cat "$README_PATH" > release-notes.md
+          else
+            cat > release-notes.md << EOF
+          # Botanix v$VERSION
+
+          Release artifacts and documentation for Botanix v$VERSION.
+
+          See the [release page](https://github.com/${{ github.repository }}/tree/main/releases/$VERSION) for download links.
+          EOF
+          fi
+
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          cat release-notes.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Download artifacts from GCS
+        id: download
+        if: steps.detect.outputs.has_release == 'true'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          CHANNEL="${{ steps.metadata.outputs.channel }}"
+
+          mkdir -p artifacts
+
+          RELEASE_JSON="releases/$VERSION/release.json"
+
+          echo "Downloading artifacts..."
+
+          jq -r '.binaries.reth | to_entries[] | .value.url' "$RELEASE_JSON" | while read url; do
+            filename=$(basename "$url")
+            echo "Downloading $filename from $url"
+            curl -fsSL "$url" -o "artifacts/$filename" || echo "Warning: Failed to download $filename"
+          done
+
+          jq -r '.binaries.reth | to_entries[] | .value.checksum_url' "$RELEASE_JSON" | while read url; do
+            filename=$(basename "$url")
+            echo "Downloading $filename from $url"
+            curl -fsSL "$url" -o "artifacts/$filename" || echo "Warning: Failed to download $filename"
+          done
+
+
+          jq -r '.binaries."btc-server" | to_entries[] | .value.url' "$RELEASE_JSON" | while read url; do
+            filename=$(basename "$url")
+            echo "Downloading $filename from $url"
+            curl -fsSL "$url" -o "artifacts/$filename" || echo "Warning: Failed to download $filename"
+          done
+
+
+          jq -r '.binaries."btc-server" | to_entries[] | .value.checksum_url' "$RELEASE_JSON" | while read url; do
+            filename=$(basename "$url")
+            echo "Downloading $filename from $url"
+            curl -fsSL "$url" -o "artifacts/$filename" || echo "Warning: Failed to download $filename"
+          done
+
+          echo "Downloaded artifacts:"
+          ls -lh artifacts/
+
+          if [ -z "$(ls -A artifacts/)" ]; then
+            echo "Warning: No artifacts downloaded"
+            echo "has_artifacts=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_artifacts=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check if release exists
+        id: check_release
+        if: steps.detect.outputs.has_release == 'true'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          GIT_TAG="${{ steps.metadata.outputs.git_tag }}"
+
+          TAG="${GIT_TAG:-v$VERSION}"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists"
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "tag=$TAG" >> $GITHUB_OUTPUT
+          else
+            echo "Release $TAG does not exist"
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "tag=$TAG" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create GitHub Release
+        if: steps.detect.outputs.has_release == 'true' && steps.check_release.outputs.exists == 'false'
+        run: |
+          VERSION="${{ steps.detect.outputs.version }}"
+          TAG="${{ steps.check_release.outputs.tag }}"
+          TITLE="${{ steps.metadata.outputs.title }}"
+          PRERELEASE="${{ steps.metadata.outputs.prerelease }}"
+
+          GH_ARGS="$TAG --title \"$TITLE\" --notes-file release-notes.md"
+
+          if [ "$PRERELEASE" = "true" ]; then
+            GH_ARGS="$GH_ARGS --prerelease"
+          fi
+
+          if [ -d "artifacts" ] && [ -n "$(ls -A artifacts/)" ]; then
+            GH_ARGS="$GH_ARGS artifacts/*"
+          fi
+
+          echo "Creating release with command: gh release create $GH_ARGS"
+          eval "gh release create $GH_ARGS"
+
+          echo "Successfully created release $TAG"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Update existing release
+        if: steps.detect.outputs.has_release == 'true' && steps.check_release.outputs.exists == 'true'
+        run: |
+          TAG="${{ steps.check_release.outputs.tag }}"
+
+          echo "Release $TAG already exists. Updating with new artifacts if any..."
+
+          if [ -d "artifacts" ] && [ -n "$(ls -A artifacts/)" ]; then
+            for artifact in artifacts/*; do
+              echo "Uploading $(basename $artifact)..."
+              gh release upload "$TAG" "$artifact" --clobber || echo "Warning: Failed to upload $(basename $artifact)"
+            done
+            echo "Updated release $TAG with new artifacts"
+          else
+            echo "No artifacts to upload"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
