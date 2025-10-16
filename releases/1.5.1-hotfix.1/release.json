@@ -1,0 +1,42 @@
+{
+  "version": "1.5.1-hotfix.1",
+  "channel": "hotfix",
+  "release_date": "2025-10-16T17:39:59Z",
+  "git_tag": "v1.5.1-hotfix.1",
+  "git_sha": "5189e280b04d2ea0833c8ee29bc25d03ead2cbf9",
+  "previous_version": "1.5.0",
+  "breaking_changes": false,
+  "prerelease": true,
+  "binaries": {
+    "reth": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.5.1-hotfix.1/reth-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.5.1-hotfix.1/reth-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.5.1-hotfix.1/reth-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/reth/hotfix/1.5.1-hotfix.1/reth-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    },
+    "btc-server": {
+      "linux_x86_64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.5.1-hotfix.1/btc-server-x86_64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.5.1-hotfix.1/btc-server-x86_64-unknown-linux-gnu.tar.gz.sha256sum"
+      },
+      "linux_arm64": {
+        "url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.5.1-hotfix.1/btc-server-aarch64-unknown-linux-gnu.tar.gz",
+        "checksum_url": "https://storage.googleapis.com/botanix-artifact-registry/releases/btc-server/hotfix/1.5.1-hotfix.1/btc-server-aarch64-unknown-linux-gnu.tar.gz.sha256sum"
+      }
+    }
+  },
+  "docker_images": {
+    "btc_server": {
+      "registry": "ghcr.io/botanix-labs/botanix-btc-server",
+      "tags": ["1.5.1-hotfix.1", "hotfix"]
+    },
+    "reth_node": {
+      "registry": "ghcr.io/botanix-labs/botanix-reth-node",
+      "tags": ["1.5.1-hotfix.1", "hotfix"]
+    }
+  }
+}

@@ -5,6 +5,18 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.1-hotfix.1] - 2025-10-16
+
+
+### Miscellaneous
+
+* dummy change to force build ([5189e28](https://github.com/botanix-labs/Macbeth/commit/5189e280b04d2ea0833c8ee29bc25d03ead2cbf9))
+* **release:** back-merge v1.5.0 from main to hotfix ([402699a](https://github.com/botanix-labs/Macbeth/commit/402699ac7d4b051171ed456bc1a75c82802ec5d0))
+
+
+**Downloads:** [Release Page](../../releases/1.5.1-hotfix.1/)
+
+
 ## [1.4.0-hotfix.2] - 2025-10-01
 
 
