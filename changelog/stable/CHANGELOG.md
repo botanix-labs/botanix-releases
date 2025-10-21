@@ -5,6 +5,21 @@ All notable changes to the stable release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.1] - 2025-10-21
+
+
+### Miscellaneous
+
+* dummy change to force build ([5189e28](https://github.com/botanix-labs/Macbeth/commit/5189e280b04d2ea0833c8ee29bc25d03ead2cbf9))
+* **release:** back-merge v1.5.0 from main to hotfix ([402699a](https://github.com/botanix-labs/Macbeth/commit/402699ac7d4b051171ed456bc1a75c82802ec5d0))
+* **release:** bump version to 1.5.1-hotfix.1 ([6902cc3](https://github.com/botanix-labs/Macbeth/commit/6902cc3289a1d8b09bae371130bea06c850a0e94))
+* remove dummy change that forced build ([c90b655](https://github.com/botanix-labs/Macbeth/commit/c90b65547bb4ae29b33c581535556c42f58b1429))
+* remove feature doc_auto_cfg ([278315b](https://github.com/botanix-labs/Macbeth/commit/278315b127105ec3a83a5a7d3a47e818a114a477))
+
+
+**Downloads:** [Release Page](../../releases/1.5.1/)
+
+
 ## [1.5.0] - 2025-10-02
 
 

@@ -8,6 +8,13 @@
       "path": "releases/1.2.0-rc.10"
     },
     {
+      "version": "1.5.1",
+      "channel": "stable",
+      "date": "2025-10-21T22:54:32Z",
+      "prerelease": false,
+      "path": "releases/1.5.1"
+    },
+    {
       "version": "1.5.1-hotfix.1",
       "channel": "hotfix",
       "date": "2025-10-16T17:39:59Z",
@@ -17,10 +24,12 @@
   ],
   "channels": {
     "rc": "1.2.0-rc.10",
-    "hotfix": "1.5.1-hotfix.1"
+    "hotfix": "1.5.1-hotfix.1",
+    "stable": "1.5.1"
   },
   "latest": {
     "rc": "1.2.0-rc.10",
-    "hotfix": "1.5.1-hotfix.1"
+    "hotfix": "1.5.1-hotfix.1",
+    "stable": "1.5.1"
   }
 }
