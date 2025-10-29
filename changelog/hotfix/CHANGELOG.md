@@ -5,6 +5,26 @@ All notable changes to the hotfix release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.2-hotfix.1] - 2025-10-29
+
+
+### Bug Fixes
+
+* **pegouts:** remove all finalized pegouts from pending pegouts list ([0d8e12d](https://github.com/botanix-labs/Macbeth/commit/0d8e12dbc2fc75839bf6489f79f80ad6c3a203ab))
+* **pegouts:** remove all finalized pegouts from pending pegouts list ([#1019](https://github.com/botanix-labs/Macbeth/issues/1019)) ([53394e9](https://github.com/botanix-labs/Macbeth/commit/53394e93ae6dc3e9f8ba376f473d483b5fb9c7ca))
+
+### Tests
+
+* **outputs:** add test to validate finalized pegouts are removed from pending pegouts ([70bec97](https://github.com/botanix-labs/Macbeth/commit/70bec97a7fae2676bddac9476d43c13bc3794346))
+
+### Miscellaneous
+
+* **release:** back-merge v1.5.1 from main to hotfix ([bb55593](https://github.com/botanix-labs/Macbeth/commit/bb555939c84538c688eba862002f258ebbaa06da))
+
+
+**Downloads:** [Release Page](../../releases/1.5.2-hotfix.1/)
+
+
 ## [1.5.1-hotfix.1] - 2025-10-16
 
 

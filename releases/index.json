@@ -20,16 +20,23 @@
       "date": "2025-10-16T17:39:59Z",
       "prerelease": true,
       "path": "releases/1.5.1-hotfix.1"
+    },
+    {
+      "version": "1.5.2-hotfix.1",
+      "channel": "hotfix",
+      "date": "2025-10-29T16:48:06Z",
+      "prerelease": true,
+      "path": "releases/1.5.2-hotfix.1"
     }
   ],
   "channels": {
     "rc": "1.2.0-rc.10",
-    "hotfix": "1.5.1-hotfix.1",
+    "hotfix": "1.5.2-hotfix.1",
     "stable": "1.5.1"
   },
   "latest": {
     "rc": "1.2.0-rc.10",
-    "hotfix": "1.5.1-hotfix.1",
+    "hotfix": "1.5.2-hotfix.1",
     "stable": "1.5.1"
   }
 }
