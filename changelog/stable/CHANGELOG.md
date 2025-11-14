@@ -5,6 +5,18 @@ All notable changes to the stable release channel will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.2] - 2025-11-14
+
+
+### Miscellaneous
+
+* update README to reference botanix repo ([7a124f3](https://github.com/botanix-labs/Macbeth/commit/7a124f34ed96cc66a1b16f5c76c8291b9009bb09))
+* update README to reference botanix repo ([#1025](https://github.com/botanix-labs/Macbeth/issues/1025)) ([3b42abd](https://github.com/botanix-labs/Macbeth/commit/3b42abd2ce66ae75cbc3576b4d1b8b6af8a7a3f6))
+
+
+**Downloads:** [Release Page](../../releases/1.5.2/)
+
+
 ## [1.5.1] - 2025-10-21
 
 
